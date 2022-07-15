@@ -1,9 +1,11 @@
-
+import Navbar from "./Navbar"
+import Corpo from "./Corpo"
 
 function App() {
     return (
         <div class="app">
-            <h1>TESTANDO</h1>
+            <Navbar />
+            <Corpo />
         </div>
     )
 }
