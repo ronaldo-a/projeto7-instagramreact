@@ -1,11 +1,15 @@
 import Navbar from "./Navbar"
-import Corpo from "./Corpo"
+import Esquerda from "./Esquerda"
+import Sidebar from "./Sidebar"
 
 function App() {
     return (
         <div class="app">
             <Navbar />
-            <Corpo />
+            <div class="corpo">
+                <Esquerda />
+                <Sidebar />
+            </div>
         </div>
     )
 }
