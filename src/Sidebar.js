@@ -1,15 +1,26 @@
 import Sugestoes from "./Sugestoes"
 
+let sugestion = [{sugImg: "assets/img/catanacomics.svg", sugNickName: "catanacomics", sugName: "Catana" }]
+
+function Sugestion(props) {
+    return (
+    <div class="usuario">
+        <img src={props.sugImg} />
+        <div class="texto">
+            <strong>{props.sugNickName}</strong>
+            {props.sugName}
+        </div>
+    </div>
+    )
+}
+
+let sugestionArr = sugestion.map(Sugestion)
+
+
 export default function Sidebar() {
     return (
         <div class="sidebar">
-            <div class="usuario">
-                <img src="assets/img/catanacomics.svg" />
-                <div class="texto">
-                    <strong>catanacomics</strong>
-                    Catana
-                </div>
-            </div>
+            {sugestionArr}
 
             <Sugestoes />
             
